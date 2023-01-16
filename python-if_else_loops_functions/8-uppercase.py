@@ -6,4 +6,4 @@ def uppercase(str):
             strupper += chr(ord(str[i]) - 32)
         else:
             strupper += str[i]
-    print(strupper)
+    print("{}".format(strupper))
