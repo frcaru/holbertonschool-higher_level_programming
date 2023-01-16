@@ -2,4 +2,4 @@
 import string
 
 for a in string.ascii_lowercase:
-    print(f"{a}", end="")
+    print(a, end="")
