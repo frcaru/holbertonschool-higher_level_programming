@@ -9,6 +9,6 @@ def print_reversed_list_integer(my_list=[]):
         if i == 0:
             break
         else:
-            print("{}".format(my_list[i - 1]))
+            print("{:d}".format(my_list[i - 1]))
             i -= 1
             count += 1
