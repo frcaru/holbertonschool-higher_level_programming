@@ -3,6 +3,8 @@
 
 def print_reversed_list_integer(my_list=[]):
 
+    if not my_list:
+        return None
     i = len(my_list)
     count = 0
     while count <= len(my_list):
