@@ -3,7 +3,6 @@
 
 def multiple_returns(sentence):
 
-    print(len(sentence))
     if len(sentence) < 1:
         new_tuple = (len(sentence), None)
     else:
