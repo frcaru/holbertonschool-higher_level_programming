@@ -3,7 +3,7 @@
 
 def roman_to_int(roman_string):
 
-    if not roman_string:
+    if not roman_string or (type(roman_string) != str):
         return None
     result = 0
 
@@ -48,6 +48,8 @@ def roman_to_int(roman_string):
 
         if r == 'I':
             if roman_string[roman_string.index(r) + 1] == 'I':
+                result += 1
+            elif roman_string.index(r) == len(roman_string):
                 result += 1
 
     return result
