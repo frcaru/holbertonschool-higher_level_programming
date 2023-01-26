@@ -9,31 +9,41 @@ def roman_to_int(roman_string):
 
     for r in roman_string:
         if r == 'M':
-            if roman_string[roman_string.index(r) - 1] == 'C':
+            if roman_string[roman_string.index(r)] == roman_string[0]:
+                reuslt += 1000
+            elif roman_string[roman_string.index(r) - 1] == 'C':
                 result += 900
             else:
                 result += 1000
 
         if r == 'D':
-            if roman_string[roman_string.index(r) - 1] == 'C':
+            if roman_string[roman_string.index(r)] == roman_string[0]:
+                result += 500
+            elif roman_string[roman_string.index(r) - 1] == 'C':
                 result += 400
             else:
                 result += 500
 
         if r == 'C':
-            if roman_string[roman_string.index(r) - 1] == 'X':
+            if roman_string[roman_string.index(r)] == roman_string[0]:
+                result += 100
+            elif roman_string[roman_string.index(r) - 1] == 'X':
                 result += 90
             else:
                 result += 100
 
         if r == 'L':
-            if roman_string[roman_string.index(r) - 1] == 'X':
+            if roman_string[roman_string.index(r)] == roman_string[0]:
+                result += 50
+            elif roman_string[roman_string.index(r) - 1] == 'X':
                 result += 40
             else:
                 result += 50
 
         if r == 'X':
-            if roman_string[roman_string.index(r) - 1] == 'I':
+            if roman_string[roman_string.index(r)] == roman_string[0]:
+                result += 10
+            elif roman_string[roman_string.index(r) - 1] == 'I':
                 result += 9
             else:
                 result += 10
@@ -47,9 +57,11 @@ def roman_to_int(roman_string):
                 result += 5
 
         if r == 'I':
-            if roman_string[roman_string.index(r) + 1] == 'I':
+            if roman_string[roman_string.index(r)] == roman_string[0]:
                 result += 1
-            elif roman_string.index(r) == len(roman_string):
+            elif roman_string[roman_string.index(r) + 1] == 'I':
+                result += 1
+            elif roman_string.index(r) == len(roman_string) - 1:
                 result += 1
 
     return result
