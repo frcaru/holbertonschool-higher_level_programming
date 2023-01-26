@@ -59,9 +59,8 @@ def roman_to_int(roman_string):
         if r == 'I':
             if roman_string[roman_string.index(r)] == roman_string[0]:
                 result += 1
-            elif roman_string[roman_string.index(r) + 1] == 'I':
-                result += 1
             elif roman_string.index(r) == len(roman_string) - 1:
                 result += 1
-
+            elif roman_string[roman_string.index(r) + 1] == 'I':
+                result += 1
     return result
