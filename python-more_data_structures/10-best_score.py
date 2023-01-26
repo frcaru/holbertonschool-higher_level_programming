@@ -3,7 +3,7 @@
 
 def best_score(a_dictionary):
 
-    bestkey =""
+    bestkey = ""
     max = 0
 
     if not a_dictionary:
