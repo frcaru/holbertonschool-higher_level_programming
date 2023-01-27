@@ -3,14 +3,6 @@
 
 def roman_to_int(roman_string):
 
-#M = 1000
-#D = 500
-#C = 100
-#L = 50
-#X = 10
-#V = 5
-#I = 1
-
     roman_dict = {
             'M': 1000,
             'D': 500,
@@ -21,7 +13,7 @@ def roman_to_int(roman_string):
             'I': 1,
     }
 
-    if not isinstance(roman_string, str) or roman_string == None:
+    if not isinstance(roman_string, str) or roman_string is None:
         return 0
 
     summ = 0
