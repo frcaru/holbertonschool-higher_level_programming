@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 """ This module is the creation of class square
-    defined by its size """
+    defined by its size"""
 
 
 class Square:
-    """ Class Square
+    """
+    Class Square
 
     Attributes:
     __size : the size of the square
@@ -15,22 +16,22 @@ class Square:
     my_print() : prints the square with # characters
     """
     def __init__(self, __size=0, __position=(0, 0)):
-        """ Constructor method """
+        """ Constructor method"""
         self.__size = __size
         self.__position = __position
 
     def area(self):
-        """ Method that returns the current square area """
+        """ Method that returns the current square area"""
         return (self.__size) ** 2
 
     @property
     def position(self):
-        """ Getter method for position """
+        """ Getter method for position"""
         return self.__position
 
     @position.setter
     def position(self, value):
-        """ Setter method for position """
+        """ Setter method for position"""
         if not isinstance(value, tuple) or len(value) != 2
         or type(value[0]) is not int or value[0] < 0
         or type(value[1]) is not int or value[1] < 0:
@@ -40,12 +41,12 @@ class Square:
 
     @property
     def size(self):
-        """ Getter method for size """
+        """ Getter method for size"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ Setter method for size """
+        """ Setter method for size"""
         if type(value) != int:
             raise TypeError("size must be an integer")
         if value < 0:
@@ -54,7 +55,7 @@ class Square:
             self.__size = value
 
     def my_print(self):
-        """ Method that prints the square with the # char """
+        """ Method that prints the square with the # char"""
         if self.__size == 0:
             print("")
         else:
