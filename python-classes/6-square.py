@@ -5,11 +5,11 @@
 class Square:
     """ Class Square
 
-    Attribute:
+    Attributes:
     __size : the size of the square
-    __position : a tuple of 2 positive integers
+    __position : a tuple position of 2 positive integers
 
-    Method:
+    Methods:
     area() : returns the square area
     my_print() : prints the square with # characters
 
