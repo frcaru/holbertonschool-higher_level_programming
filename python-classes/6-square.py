@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-""" This module is a first creation of class that define a square
-    with private size"""
 """ This module is the creation of class square
     defined by its size """
 
@@ -15,19 +13,14 @@ class Square:
     Methods:
     area() : returns the square area
     my_print() : prints the square with # characters
-
-
     """
-
     def __init__(self, __size=0, __position=(0, 0)):
         """ Constructor method """
-
         self.__size = __size
         self.__position = __position
 
     def area(self):
         """ Method that returns the current square area """
-
         return (self.__size) ** 2
 
     @property
@@ -62,7 +55,6 @@ class Square:
 
     def my_print(self):
         """ Method that prints the square with the # char """
-
         if self.__size == 0:
             print("")
         else:
