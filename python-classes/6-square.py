@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This module is the creation of class Square defined by its size """
+""" This module is the creation of class square defined by its size """
 
 
 class Square:
