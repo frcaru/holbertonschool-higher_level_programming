@@ -9,7 +9,7 @@ class Square:
     Private attribute:
     __size : the size of the square
     """
-    
+
     def __init__(self, __size=0):
 
         if isinstance(__size, int) is not True:
